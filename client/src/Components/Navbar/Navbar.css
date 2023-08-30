@@ -165,8 +165,8 @@ button {
   align-items: center;
 }
 .UserAccItem i{
-  color: rgb(55, 93, 187);
-  font-size: 1.5rem;
+  color: #777;
+  font-size: 1.8rem;
 }
 .UserAccItem p{
   margin-left: 1em;
@@ -204,7 +204,11 @@ button {
   cursor: text;
   padding: 0px 12px;
 }
-
+.labelforsearch i{
+  font-size: 1.2em;
+  color: #777;
+  cursor: pointer;
+}
 .searchIcon {
   width: 13px;
 }

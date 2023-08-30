@@ -6,6 +6,8 @@ import Register from './Pages/Register/Register';
 import Category from './Pages/Category/Category';
 import Home from './Pages/Home/Home';
 import NotificationPage from './Pages/Notification/NotificationPage'
+import AddProductPage from './Pages/AddProductPage/AddProductPage';
+import ProductDetails from './Pages/ProductDetails/ProductDetails';
 
 function App() {
   return (
@@ -17,6 +19,8 @@ function App() {
             <Route exact path="/login" element={<Login />} />
             <Route exact path="/home" element={<Home />} />
             <Route exact path="/categ" element={<Category />} />
+            <Route exact path="/add-product" element={<AddProductPage />} />
+            <Route exact path="/product-detail" element={<ProductDetails />} />
             <Route exact path="/notification" element={<NotificationPage />} />
           </Routes>
       </Router>

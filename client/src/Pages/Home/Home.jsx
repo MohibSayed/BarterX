@@ -21,11 +21,12 @@ const Home = () => {
   const homepageProduct = [
     {
       id: 1,
-      img: "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/19446146/2023/8/23/de32f905-32ca-4337-a431-1cb4ea3c84291692786536597USPoloAssnMenWhiteSolidPoloCollarPureCottonSlimFitT-shirt1.jpg",
+      img: "https://www.amazinginteriors.co.nz/cdn/shop/products/QL1003-01_2000x.jpg?v=1681420966",
       alt: "hk",
-      title: "U.S. Polo Assn.",
-      mbtitle: "U.S. Polo Assn.",
-      desc: "Men White Solid Polo Collar Slim Fit T-shirt",
+      title: "Sofa",
+      mbtitle: "Sofa",
+      owner: "Ram Shinde",
+      desiredProduct: "Office Chair",
       price: 1499,
       link: "/categ",
     },
@@ -35,7 +36,8 @@ const Home = () => {
       alt: "hk",
       title: "Sony Camera",
       mbtitle: "Sony Camera",
-      desc: "Sony Professional Video Camera",
+      owner: "Ram Shinde",
+      desiredProduct: "Sonata Watch",
       price: 59999,
       link: "/categ",
     },
@@ -45,7 +47,8 @@ const Home = () => {
       alt: "hk",
       title: "Apple Watch Ultra",
       mbtitle: "Apple Watch Ultra",
-      desc: "Apple Watch Ultra [GPS + Cellular 49 mm]",
+      owner: "Ram Shinde",
+      desiredProduct: "Sonata Watch",
       price: 65789,
       link: "/categ",
     },
@@ -55,7 +58,8 @@ const Home = () => {
       alt: "hk",
       title: "Sony Camera",
       mbtitle: "Sony Camera",
-      desc: "Sony Professional Video Camera",
+      owner: "Ram Shinde",
+      desiredProduct: "Sonata Watch",
       price: 59999,
       link: "/categ",
     },
@@ -65,7 +69,8 @@ const Home = () => {
       alt: "hk",
       title: "U.S. Polo Assn.",
       mbtitle: "U.S. Polo Assn.",
-      desc: "Men White Solid Polo Collar Slim Fit T-shirt",
+      owner: "Ram Shinde",
+      desiredProduct: "Sonata Watch",
       price: 1499,
       link: "/categ",
     },
@@ -75,7 +80,8 @@ const Home = () => {
       alt: "hk",
       title: "Sony Camera",
       mbtitle: "Sony Camera",
-      desc: "Sony Professional Video Camera",
+      owner: "Ram Shinde",
+      desiredProduct: "Sonata Watch",
       price: 59999,
       link: "/categ",
     },
@@ -85,7 +91,8 @@ const Home = () => {
       alt: "hk",
       title: "Apple Watch Ultra",
       mbtitle: "Apple Watch Ultra",
-      desc: "Apple Watch Ultra [GPS + Cellular 49 mm]",
+      owner: "Ram Shinde",
+      desiredProduct: "Sonata Watch",
       price: 65789,
       link: "/categ",
     },
@@ -95,7 +102,8 @@ const Home = () => {
       alt: "hk",
       title: "Sony Camera",
       mbtitle: "Sony Camera",
-      desc: "Sony Professional Video Camera",
+      owner: "Ram Shinde",
+      desiredProduct: "Sonata Watch",
       price: 59999,
       link: "/categ",
     },
@@ -129,9 +137,9 @@ const Home = () => {
             />
           )}
           <p className="product_desc" data-aos="fade-up">
-            {item.desc}
+            Owner: {item.owner}
           </p>
-          <p className="product_desc">Rs. {item.price}</p>
+          <p className="product_desc">Required: {item.desiredProduct}</p>
         </div>
         <Link to={item.link} className="product_link">
           Know more
@@ -249,9 +257,15 @@ const Home = () => {
           viewport={{ amount: 0.1 }}
           transition={{ duration: 0.5 }}
         >
-          <h2 className="heading" data-aos="fade">
+          <motion.h2 
+          className="heading"
+          variants={textVariants("left", 0.2)}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ amount: 0.1 }}
+          transition={{ duration: 0.5 }}>
             Products
-          </h2>
+          </motion.h2>
           <div className="product_row" data-aos="fade-up">
             {width > 834 || width < 768 ? null : (
               <div className="arrows_wrapper">
@@ -428,9 +442,16 @@ const Home = () => {
           viewport={{ amount: 0.1 }}
           transition={{ duration: 0.5 }}
         >
-          <h2 className="heading" data-aos="fade">
+          <motion.h2 
+          className="heading"
+          variants={textVariants("left", 0.2)}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ amount: 0.1 }}
+          transition={{ duration: 0.5 }}
+          >
             Weekly Popular Products
-          </h2>
+          </motion.h2>
           <div className="product_row" data-aos="fade-up">
             {width > 834 || width < 768 ? null : (
               <div className="arrows_wrapper">
@@ -534,9 +555,16 @@ const Home = () => {
           viewport={{ amount: 0.1 }}
           transition={{ duration: 0.5 }}
         >
-          <h2 className="heading" data-aos="fade">
+          <motion.h2 
+          className="heading"
+          variants={textVariants("left", 0.2)}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ amount: 0.1 }}
+          transition={{ duration: 0.5 }}
+          >
             Todays Best Deals For You!
-          </h2>
+          </motion.h2>
           <div className="product_row" data-aos="fade-up">
             {width > 834 || width < 768 ? null : (
               <div className="arrows_wrapper">
@@ -640,9 +668,16 @@ const Home = () => {
           viewport={{ amount: 0.1 }}
           transition={{ duration: 0.5 }}
         >
-          <h2 className="heading" data-aos="fade">
+          <motion.h2 
+          className="heading"
+          variants={textVariants("left", 0.2)}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ amount: 0.1 }}
+          transition={{ duration: 0.5 }}
+          >
             Most Selling Products
-          </h2>
+          </motion.h2>
           <div className="product_row" data-aos="fade-up">
             {width > 834 || width < 768 ? null : (
               <div className="arrows_wrapper">

@@ -76,7 +76,7 @@ const NavbarL = () => {
                 </Link>
               </li>
               <li className="menu-item">
-                <Link className="menu-link" to="/">
+                <Link className="menu-link" to="/add-product">
                   Where We Barter
                 </Link>
               </li>

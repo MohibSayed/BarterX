@@ -1,0 +1,158 @@
+.addProductInnerCont {
+  display: flex;
+  justify-content: space-between;
+}
+.addProductContainer {
+  margin-top: 7em;
+  padding: 20px 80px;
+}
+.addProductContainer h1 {
+  /* text-align: center; */
+  color: rgb(18 19 65);
+  margin-bottom: 1em;
+}
+.addProductContainer p {
+  /* text-align: center; */
+  color: #777;
+}
+.addProductInnerContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  margin-top: 2em;
+}
+.categDropDown {
+  margin-bottom: 2em;
+  display: flex;
+  justify-content: space-between;
+  width: 35rem;
+}
+.dropdownDiv {
+  width: 14rem;
+  border-radius: 0.5em;
+  margin-top: 1em;
+}
+.inputContainerProduct {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2em;
+}
+.inputContainerProduct p {
+  margin-top: 1em;
+  text-align: start;
+  color: #777;
+}
+.inputContainerProduct span,
+.fileUpload span {
+  font-weight: bold;
+  margin-bottom: 1em;
+}
+.inputContainerProduct input {
+  width: 35rem;
+  padding: 10px;
+  border-radius: 0.5em;
+  border: 1px solid #ccc;
+}
+.inputContainerProductDesc textarea {
+  padding: 10px;
+  border-radius: 0.5em;
+  border: 1px solid #ccc;
+  width: 35rem;
+}
+.react-datepicker__input-container input {
+  width: 14rem;
+  padding: 10px;
+  border-radius: 0.5em;
+  border: 1px solid #ccc;
+}
+.guZdik {
+  position: relative;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  min-width: 30em !important;
+  max-width: 30em !important;
+  height: 10em !important;
+  border: 2px dashed rgb(18 19 65) !important;
+  padding: 8px 16px 8px 8px;
+  border-radius: 5px;
+  cursor: pointer;
+  -webkit-box-flex: 0;
+  flex-grow: 0;
+  margin-top: 1em !important;
+}
+.fileUpload p {
+  color: #777;
+  margin-top: 1em;
+}
+.fileUpload button {
+  margin-top: 1em;
+  padding: 15px 50px;
+  border: 1px solid rgb(18 19 65);
+  border-radius: 10px;
+}
+.fileUpload button:hover {
+  background-color: rgb(18 19 65);
+  color: #fff;
+}
+
+@media (max-width: 1280px) {
+  .categDropDown {
+    width: 30rem;
+  }
+  .inputContainerProduct input {
+    width: 30rem;
+  }
+  .inputContainerProductDesc textarea {
+    width: 30rem;
+  }
+}
+@media (max-width: 1023px) {
+  .addProductContainer h1 {
+    text-align: center;
+  }
+  .addProductContainer p {
+    text-align: center;
+  }
+  .addProductInnerCont {
+    flex-direction: column;
+    align-items: center;
+  }
+  .inputContainerProduct p {
+    text-align: start !important;
+  }
+}
+@media (max-width: 600px) {
+  .inputContainerProduct input {
+    width: 20rem;
+  }
+  .inputContainerProductDesc textarea {
+    width: 20rem;
+  }
+  .guZdik {
+    max-width: 20rem !important;
+    min-width: 20rem !important;
+  }
+  .inputContainerProduct p {
+    width: 20rem;
+    text-align: center !important;
+  }
+  .addProductContainer {
+    padding: 20px 20px;
+  }
+  .categDropDown {
+    flex-direction: column;
+    width: 20rem;
+  }
+  .dropdownDiv {
+    width: 20rem;
+  }
+  .dropDownInner {
+    margin-top: 1em;
+  }
+  .fileUpload button {
+    margin-left: 15vw;
+    margin-top: 2em;
+  }
+}

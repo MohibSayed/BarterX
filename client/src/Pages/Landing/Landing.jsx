@@ -21,7 +21,7 @@ import {
 import CountUp from "react-countup";
 import { textVariants } from "../../Components/Motion";
 import { motion } from "framer-motion";
-import TabPanel from "../../Components/VerticalTabPanel/TabPanel";
+// import TabPanel from "../../Components/VerticalTabPanel/TabPanel";
 import resumeData from "../../Components/VerticalTabPanel/Data";
 import VerticalTab from "../../Components/VerticalTabPanel/VerticalTab";
 const CategoryArr = [
@@ -67,12 +67,7 @@ const CategoryArr = [
     categDesc: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     categicon: "fas fa-tv",
   },
-  {
-    id: 8,
-    categName: "SmartTV",
-    categDesc: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    categicon: "fas fa-tv",
-  },
+
 ];
 
 const Landing = () => {
@@ -261,7 +256,7 @@ const Landing = () => {
               <i>
                 <FaDesktop />
               </i>
-              <h3></h3>
+              <h3>Desktop</h3>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             </motion.div>
             <motion.div
