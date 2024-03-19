@@ -10,9 +10,9 @@ import {
 import { Link } from "react-router-dom";
 import logo from "../../assets/logo.png";
 import "./Navbar.css";
-import AccountMenu from "./AccountMenu";
-import axios from "axios"
 // import AccountMenu from "./AccountMenu";
+import axios from "axios"
+
 
 const Navbar = () => {
   const [isMenuActive, setIsMenuActive] = useState(false);
@@ -204,7 +204,7 @@ console.log(userName);
                     fontWeight: "500",
                   }}
                 >
-                  <AccountMenu />
+                  {/* <AccountMenu /> */}
               
                 </div>
               </li>
@@ -233,7 +233,7 @@ console.log(userName);
           </div>
           <div className="userAcc">
             <div className="UserAccItem">
-              <AccountMenu />
+              {/* <AccountMenu /> */}
               <Link to="/notification">
                 <i>
                   <FaBell />

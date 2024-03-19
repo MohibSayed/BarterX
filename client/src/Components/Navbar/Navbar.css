@@ -61,9 +61,12 @@ button {
   top: 0;
   width: 100vw;
   height: auto;
-  z-index: 10;
+  z-index: 99;
   margin: 0 auto;
-  background: rgb(255, 255, 255);
+  background-color: hsla(0, 0%, 100%, .2);
+  backdrop-filter: blur(20px) saturate(160%) contrast(45%) brightness(140%);
+  -webkit-backdrop-filter: blur(20px) saturate(160%) contrast(45%) brightness(140%);
+  transition: all .5s ease-in-out;
 }
 .sticky {
   position: fixed;

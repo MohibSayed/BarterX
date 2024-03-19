@@ -9,7 +9,7 @@ import { motion } from "framer-motion";
 import resumeData from "../../Components/VerticalTabPanel/Data";
 import VerticalTab from "../../Components/VerticalTabPanel/VerticalTab";
 import { Link } from "react-router-dom";
-
+import Counteritem from "../../Components/CounterItem/CounterItem";
 const Landing = () => {
   // const [userId, setUserId] = useState("")
   // useEffect = (()=>{
@@ -34,7 +34,7 @@ const Landing = () => {
             transition={{ duration: 0.5 }}
           >
             <img
-              src="https://cdn-icons-png.flaticon.com/512/7325/7325332.png"
+              src="https://www.shutterstock.com/image-illustration/exchange-trade-conceptual-illustration-3d-600nw-45014272.jpg"
               alt=""
             />
           </motion.div>
@@ -136,7 +136,7 @@ const Landing = () => {
         <div className="my_container">
           <div className="landingSec3_row">
             <div className="barndInfoBx1">
-              <div>
+              <div className="barndInfoBxInn">
                 <div className="icon_animation">
                   <i>
                     <FaBriefcase />
@@ -149,7 +149,7 @@ const Landing = () => {
               </div>
             </div>
             <div className="barndInfoBx1">
-              <div>
+              <div className="barndInfoBxInn">
                 <div className="icon_animation">
                   <i>
                     <FaUser />
@@ -162,7 +162,7 @@ const Landing = () => {
               </div>
             </div>
             <div className="barndInfoBx1">
-              <div>
+              <div className="barndInfoBxInn">
                 <div className="icon_animation">
                   <i>
                     <FaHandshake />
@@ -177,7 +177,7 @@ const Landing = () => {
           </div>
         </div>
       </motion.div>
-
+      {/* 
       <div className="LandingSec2">
         <motion.div
           className="LandingSec2_heading"
@@ -211,7 +211,7 @@ const Landing = () => {
             exchanging them for things they truly need or desire.
           </p>
         </motion.div>
-      </div>
+      </div> */}
 
       <div className="LandingCategSec">
         <section className="Categcontainer">
@@ -228,7 +228,7 @@ const Landing = () => {
           <div className="Categrow">
             <Link to="/categ">
               <motion.div
-                variants={textVariants("left", 0.2)}
+                variants={textVariants("down", 0.2)}
                 initial="hidden"
                 whileInView="show"
                 viewport={{ amount: 0.1 }}
@@ -254,7 +254,7 @@ const Landing = () => {
 
             <Link to="/categ">
               <motion.div
-                variants={textVariants("left", 0.2)}
+                variants={textVariants("down", 0.2)}
                 initial="hidden"
                 whileInView="show"
                 viewport={{ amount: 0.1 }}
@@ -277,7 +277,7 @@ const Landing = () => {
 
             <Link to="/categ">
               <motion.div
-                variants={textVariants("left", 0.2)}
+                variants={textVariants("down", 0.2)}
                 initial="hidden"
                 whileInView="show"
                 viewport={{ amount: 0.1 }}
@@ -300,7 +300,7 @@ const Landing = () => {
 
             <Link to="/categ">
               <motion.div
-                variants={textVariants("left", 0.2)}
+                variants={textVariants("down", 0.2)}
                 initial="hidden"
                 whileInView="show"
                 viewport={{ amount: 0.1 }}
@@ -323,7 +323,7 @@ const Landing = () => {
 
             <Link to="/categ">
               <motion.div
-                variants={textVariants("left", 0.2)}
+                variants={textVariants("down", 0.2)}
                 initial="hidden"
                 whileInView="show"
                 viewport={{ amount: 0.1 }}
@@ -346,7 +346,7 @@ const Landing = () => {
 
             <Link to="/categ">
               <motion.div
-                variants={textVariants("left", 0.2)}
+                variants={textVariants("down", 0.2)}
                 initial="hidden"
                 whileInView="show"
                 viewport={{ amount: 0.1 }}
@@ -372,7 +372,7 @@ const Landing = () => {
 
             <Link to="/categ">
               <motion.div
-                variants={textVariants("left", 0.2)}
+                variants={textVariants("down", 0.2)}
                 initial="hidden"
                 whileInView="show"
                 viewport={{ amount: 0.1 }}
@@ -395,7 +395,7 @@ const Landing = () => {
 
             <Link to="/categ">
               <motion.div
-                variants={textVariants("left", 0.2)}
+                variants={textVariants("down", 0.2)}
                 initial="hidden"
                 whileInView="show"
                 viewport={{ amount: 0.1 }}
@@ -431,10 +431,13 @@ const Landing = () => {
               viewport={{ once: true, amount: 0.1 }}
               transition={{ duration: 0.5 }}
             >
-              <h1>
-                <CountUp start={0} end={160527} duration={5} suffix=" +" />
-              </h1>
-              <h3>Number of Businesses</h3>
+              <Counteritem
+                startCount={5}
+                endCount={15}
+                duration={3}
+                countTitle="Number of Businesses"
+                plus
+              />
             </motion.div>
           </div>
           <div className="countUpContainerRight">
@@ -446,10 +449,13 @@ const Landing = () => {
               viewport={{ once: true, amount: 0.1 }}
               transition={{ duration: 0.5 }}
             >
-              <h1>
-                <CountUp start={0} end={62900000} duration={5} suffix=" +" />
-              </h1>
-              <h3>Total Barter Transaction Volume</h3>
+              <Counteritem
+                startCount={5}
+                endCount={62900000}
+                duration={3}
+                countTitle="Total Barter Transaction Volume"
+                plus
+              />
             </motion.div>
           </div>
           <div className="countUpContainerLeft">
@@ -461,10 +467,13 @@ const Landing = () => {
               viewport={{ once: true, amount: 0.1 }}
               transition={{ duration: 0.5 }}
             >
-              <h1>
-                <CountUp start={0} end={212000000} duration={5} suffix=" +" />
-              </h1>
-              <h3>Total Cash Saved By Businesses</h3>
+              <Counteritem
+                startCount={3}
+                endCount={212000000}
+                duration={3}
+                countTitle="Total Cash Saved By Businesses"
+                plus
+              />
             </motion.div>
           </div>
           <div className="countUpContainerRight">
@@ -476,10 +485,13 @@ const Landing = () => {
               viewport={{ once: true, amount: 0.1 }}
               transition={{ duration: 0.5 }}
             >
-              <h1>
-                <CountUp start={0} end={95} duration={5} suffix=" +" />
-              </h1>
-              <h3>Number of Charities Supported</h3>
+              <Counteritem
+                startCount={5}
+                endCount={95}
+                duration={3}
+                countTitle="Number of Charities Supported"
+                plus
+              />
             </motion.div>
           </div>
           <div className="countUpContainerLeft">
@@ -491,10 +503,13 @@ const Landing = () => {
               viewport={{ once: true, amount: 0.1 }}
               transition={{ duration: 0.5 }}
             >
-              <h1>
-                <CountUp start={0} end={2737000} duration={5} suffix=" +" />
-              </h1>
-              <h3>Total Barter Donations by Businesses</h3>
+              <Counteritem
+                startCount={5}
+                endCount={2737000}
+                duration={3}
+                countTitle="Total Barter Donations by Businesses"
+                plus
+              />
             </motion.div>
           </div>
           <div className="countUpContainerRight">
@@ -506,10 +521,13 @@ const Landing = () => {
               viewport={{ once: true, amount: 0.1 }}
               transition={{ duration: 0.5 }}
             >
-              <h1>
-                <CountUp start={0} end={2162000} duration={5} suffix=" +" />
-              </h1>
-              <h3>Total Cash Saved By Charities</h3>
+              <Counteritem
+                startCount={5}
+                endCount={2162000}
+                duration={3}
+                countTitle="Total Cash Saved By Charities"
+                plus
+              />
             </motion.div>
           </div>
         </div>

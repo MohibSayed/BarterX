@@ -204,20 +204,19 @@
   margin: 40px 0;
 }
 .landingSec3_row {
-  background-color: rgb(152 122 251);
+  background-color: #f1f1f1;
   border-radius: 10px;
-  filter: drop-shadow(20px 20px 50px #0000001c);
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   justify-content: center;
   text-align: center;
   padding: 4.563em 4.922em 4.5em;
   width: 95%;
   margin: 0 auto;
   display: flex;
-  /* flex-wrap: wrap; */
 }
 .barndInfoBx1 {
   padding: 0 4.109em;
-  color: #fff;
+  color: #000;
   position: relative;
 }
 .barndInfo_heading {
@@ -228,8 +227,24 @@
 .barndInfo_desc {
   font-size: 1em;
 }
+.icon_animation {
+  background: #fff;
+  border-radius: 50%;
+  width: 8em;
+  height: 8em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.barndInfoBxInn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .icon_animation i {
   font-size: 3em;
+  color: rgb(152 122 251);
 }
 
 /* Category Section */
@@ -373,18 +388,13 @@
 /* LandingSec4 */
 
 .LandingSec4 {
-  margin-top: 10vh;
+  margin-top: 5em;
   padding: 5em 15em;
-  background: linear-gradient(
-    270deg,
-    rgba(174, 141, 254, 1) 0%,
-    rgba(112, 89, 243, 1) 35%,
-    rgba(112, 89, 243, 1) 100%
-  );
+  background: #f3f3f3;
 }
 .LandingSec4 h2 {
   font-size: 3rem;
-  color: #fff;
+  color: rgb(152 122 251);
   padding-bottom: 2em;
 }
 

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="375" height="40" viewBox="0 0 375 40">
+  <g id="Group_891" data-name="Group 891" transform="translate(4063 -761)">
+    <g id="Group_889" data-name="Group 889">
+      <rect id="Rectangle_1451" data-name="Rectangle 1451" width="375" height="40" transform="translate(-4063 761)" fill="#fff"/>
+      <g id="whatsapp" transform="translate(-3803 760)">
+        <path id="_x30_8.Whatsapp" d="M21.077,10A11.086,11.086,0,0,0,12.1,27.584L10.582,31.6l4.4-1.274a10.959,10.959,0,0,0,6.092,1.828,11.077,11.077,0,0,0,0-22.154Zm5.9,15.674-1.191,1.163c-1.246,1.246-4.541-.111-7.449-3.046-2.908-2.908-4.209-6.2-3.046-7.421l1.191-1.191a1.2,1.2,0,0,1,1.662,0l1.745,1.745a1.153,1.153,0,0,1-.443,1.911,1.121,1.121,0,0,0-.748,1.357,5.319,5.319,0,0,0,3.24,3.212,1.157,1.157,0,0,0,1.357-.748,1.153,1.153,0,0,1,1.911-.443l1.745,1.745A1.305,1.305,0,0,1,26.975,25.674Z" fill="#2cbd00"/>
+      </g>
+      <line id="Line_96" data-name="Line 96" x2="30" transform="translate(-3875 766) rotate(90)" fill="none" stroke="#57473d" stroke-linecap="round" stroke-width="1"/>
+    </g>
+  </g>
+</svg>

@@ -1,65 +1,157 @@
 .ban_sec {
-  margin-top: 5em;
   width: 100%;
-}
-/* .ban_img {
-  width: 100%;
+  margin: auto;
   position: relative;
-} */
-/* .ban_img img {
-  width: 100%;
-  height: 65vh;
-} */
-.ban_text {
-  background-image: url("https://i.pinimg.com/originals/31/f2/89/31f289e7a1b73ade73051f206550bb03.jpg");
-  background-size: cover;
-  background-position: center center;
-  width: 100%;
-  height: 55vh;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
-  filter: brightness(50%);
-  aspect-ratio: 3/2;
-  object-fit: contain;
-}
-.ban_text strong {
-  font: 800 62.22px/70px "Montserrat", sans-serif;
-  color: #000;
-  text-align: center;
-  text-transform: uppercase;
-}
-.ban_text strong span {
-  font: 400 44.44px/52px "Montserrat", sans-serif;
-  letter-spacing: 3px;
-  text-align: center;
-}
-.ban_text p {
-  font: 400 25px/30px "Montserrat", sans-serif;
-  color: #000;
-  margin: 7px 0 25px;
-  text-align: center;
-}
-.ban_text a {
-  display: inline-block;
-  font: 800 19.39px/24px "Montserrat", sans-serif;
-  background: rgb(152 122 251);
-  border-radius: 26px;
+  justify-content: center;
+  height: 100vh;
+  background-image: url("../../assets/shape-background.svg");
+  background-color: #000000;
   color: #fff;
-  padding: 12px 28px;
-  -moz-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  -webkit-transition: all 0.3s ease-in-out;
-  -ms-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  text-decoration: none;
 }
-.ban_text a:hover {
-  background: rgb(18 19 65);
-  color: #fff;
+.main-img {
+  width: 35%;
+  max-width: 400px;
+  height: 80%;
+  max-height: 750px;
+  object-fit: cover;
+  position: absolute;
+  z-index: 1;
+  margin-top: 5em;
 }
 
+.tag {
+  position: absolute;
+  top: 15%;
+  font-size: 20px;
+  width: 35vw;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 1px;
+  z-index: 11;
+}
+
+.scroll-div1 {
+  width: 100%;
+  position: absolute;
+  top: 23%;
+  white-space: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.scroll-div1::-webkit-scrollbar {
+  display: none;
+}
+
+.scroll-div1 > h1 {
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 130px;
+  font-weight: 900;
+  margin-right: 10px;
+
+  animation-name: scroll;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.scroll-div2 {
+  width: 100%;
+  position: absolute;
+  top: 40%;
+  white-space: nowrap; /* all the children will stay in one line */
+  overflow-x: auto;
+  overflow-y: hidden;
+  z-index: 11;
+}
+
+/* To hide the scrollbar of the text */
+.scroll-div2::-webkit-scrollbar {
+  display: none;
+}
+
+.scroll-div2 > h1 {
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 130px;
+  font-weight: 900;
+  margin-right: 10px;
+
+  color: transparent;
+  -webkit-text-stroke-color: #fff;
+  -webkit-text-stroke-width: 2px;
+
+  animation-name: scroll;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: reverse;
+}
+
+.scroll-div3 {
+  width: 100%;
+  position: absolute;
+  top: 57%;
+  white-space: nowrap; /* all the children will stay in one line */
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+/* To hide the scrollbar of the text */
+.scroll-div3::-webkit-scrollbar {
+  display: none;
+}
+
+.scroll-div3 > h1 {
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 130px;
+  font-weight: 900;
+  margin-right: 10px;
+
+  animation-name: scroll;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-100% - 15px));
+  }
+}
+
+.bottom-text {
+  position: absolute;
+  left: 0;
+  top: 75%;
+  width: 15vw;
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+@media screen and (width <= 780px) {
+  .tag {
+    font-size: 16px;
+    width: 50vw;
+  }
+  .bottom-text {
+    width: 25vw;
+  }
+  .newsletter {
+    font-size: 1.5vw;
+  }
+}
+
+/*  */
 /* Home Sec 2 */
 
 .HomeSec2 {
@@ -111,14 +203,17 @@
   background-image: url(https://m.media-amazon.com/images/I/71QE5aRRC4L._AC_UF1000,1000_QL80_.jpg);
   background-size: cover;
 }
-.HomeSec2Card p, .HomeSec3Card p,.HomeSec4Card p,.HomeSec5Card p,.HomeSec6Card p {
+.HomeSec2Card p,
+.HomeSec3Card p,
+.HomeSec4Card p,
+.HomeSec5Card p,
+.HomeSec6Card p {
   color: #000;
   font-weight: 600;
   text-align: center;
   padding-top: 2em;
-  font: 20PX "Montserrat", sans-serif;
+  font: 20px "Montserrat", sans-serif;
 }
-
 
 /* Home Sec 3 */
 

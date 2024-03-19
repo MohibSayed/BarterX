@@ -5,7 +5,6 @@ import { useWindowSize } from "react-use";
 import { Link, useNavigate } from "react-router-dom";
 import { textVariants } from "../../Components/Motion";
 import { motion } from "framer-motion";
-import banner from "../../assets/banner1.png";
 import Footer from "../../Components/Footer/Footer";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Navigation } from "swiper/modules";
@@ -13,10 +12,9 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import axios from "axios";
-// import { useEffect } from "react-router-dom";
 import leftarrow from "../../assets/left_arrow.svg";
 import rightarrow from "../../assets/right_arrow.svg";
-import Skeleton, { SkeletonTheme } from "react-loading-skeleton";
+import hero from '../../assets/hero.png'
 
 const Home = () => {
   const { width } = useWindowSize();
@@ -26,7 +24,6 @@ const Home = () => {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    // Fetch products from the backend API using Axios
     axios
       .get("http://localhost:8800/api/products")
       .then((response) => {
@@ -361,7 +358,7 @@ const Home = () => {
     <>
       <Navbar />
 
-      <section className="ban_sec">
+      {/* <section className="ban_sec">
         <motion.div
           className="Bannercontainer"
           variants={textVariants("up", 0.2)}
@@ -371,11 +368,6 @@ const Home = () => {
           transition={{ duration: 0.5 }}
         >
           <div className="ban_img">
-            {/* <img
-              src="https://www.bgtrade.io/assets/cotactbg-c21c29e8.png"
-              alt="banner"
-              border="0"
-            /> */}
             <div className="ban_text">
               <strong>
                 <span>Shopping And</span>
@@ -390,6 +382,43 @@ const Home = () => {
             </div>
           </div>
         </motion.div>
+      </section> */}
+
+      <section className="ban_sec">
+        <img
+          class="main-img"
+          src="https://png.pngtree.com/png-vector/20220512/ourmid/pngtree-barter-icon-for-product-exchange-on-black-background-vector-png-image_46103952.jpg"
+        />
+
+        <h1 class="tag">
+          Barter your spare capacity unsold time idle inventory empty space to
+          get the things you need.
+        </h1>
+
+        <div class="scroll-div1">
+          <h1>barter</h1>
+          <h1>barter</h1>
+          <h1>barter</h1>
+          <h1>barter</h1>
+        </div>
+
+        <div class="scroll-div2">
+          <h1>barter</h1>
+          <h1>barter</h1>
+          <h1>barter</h1>
+          <h1>barter</h1>
+        </div>
+
+        <div class="scroll-div3">
+          <h1>barter</h1>
+          <h1>barter</h1>
+          <h1>barter</h1>
+          <h1>barter</h1>
+        </div>
+
+        <h4 class="bottom-text">
+          Barter what you have. Get what you need. Give what you can.
+        </h4>
       </section>
 
       <section className="HomeSec2">
@@ -559,7 +588,10 @@ const Home = () => {
               {productLists.length > 0 ? (
                 productLists
               ) : (
-                <img src="https://cdn.dribbble.com/users/546766/screenshots/4790425/progress-circle.gif" height={250}/>
+                <img
+                  src="https://cdn.dribbble.com/users/546766/screenshots/4790425/progress-circle.gif"
+                  height={250}
+                />
                 // <SkeletonTheme baseColor="#fafafe" highlightColor="#eee">
                 //   <div>
                 //     <Skeleton count={1} height="10em" width="18em" />

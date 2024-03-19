@@ -1,0 +1,253 @@
+/* @import "../../common.scss"; */
+
+.header {
+  position: fixed;
+  height: 9.8em;
+  top: 0;
+  left: 0;
+  z-index: 6;
+  width: 100%;
+  background: #000;
+  transition: 0.3s all;
+  padding: 0em 0;
+  display: flex;
+  align-items: center;
+}
+
+.header .nav_icon {
+  width: 2.8em;
+  height: 2.4em;
+  position: relative;
+  z-index: 2;
+  transform: rotate(0deg);
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.header .nav_icon .nav_icon_line1,
+.header .nav_icon .nav_icon_line2 {
+  width: 100%;
+  max-width: 60%;
+  align-self: flex-end;
+}
+
+.header .nav_icon .nav_icon_line2 {
+  max-width: 77%;
+}
+
+.header .nav_icon span {
+  display: block;
+  width: 100%;
+  height: 0.2em;
+  background-color: #000;
+  transform: rotate(0deg);
+  transition: 0.25s ease-in-out;
+}
+
+.header .nav_icon.open_nav {
+  transform: translateY(-0.5em);
+}
+
+.header .nav_icon.open_nav span:nth-child(1) {
+  top: 18px;
+  transform: translateY(1.2em) rotate(135deg);
+  max-width: 100%;
+}
+
+.header .nav_icon.open_nav span:nth-child(2) {
+  opacity: 0;
+  left: -60px;
+}
+
+.header .nav_icon.open_nav span:nth-child(3) {
+  transform: translateY(-0.28em) rotate(-135deg);
+  max-width: 100%;
+}
+
+.header .nav_icon_white span {
+  background-color: #fff;
+}
+
+.header .nav_icon_white.open_nav span {
+  background-color: #000;
+}
+
+.header .route_link {
+  color: #FFFFFF;
+  text-decoration: none;
+  transition: 0.3s all;
+  padding-top: 10px;
+  position: relative;
+}
+
+.header .route_link:before {
+  content: "";
+  position: absolute;
+  transition: transform 0.5s ease;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background: #DC7236;
+  transform: scaleX(0);
+}
+
+.header .route_link:hover:before {
+  transform: scaleX(1);
+  color: #DC7236;
+}
+
+.header .route_link_black {
+  color: #000 !important;
+  text-decoration: none;
+  transition: 0.3s all;
+}
+
+.header .route_link_black:hover {
+  color: #DC7236 !important;
+}
+
+.header .link_selected {
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.header .Navbarclass {
+  position: relative;
+  display: flex;
+  height: 80px;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 0.5em;
+  border: none;
+  text-decoration: none;
+  outline: none;
+}
+
+.header .Navbarclass:hover {
+  cursor: default;
+}
+
+.header .Navbarclass .nav_logo_img {
+  width: 100%;
+  max-width: 10em;
+  position: absolute;
+  left: 0%;
+  top: 48%;
+  transform: translate(0%, -50%);
+  padding: 0.5em;
+}
+
+.header .Navbarclass ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  list-style: none;
+  outline: none;
+  border: none;
+  margin: 0;
+  transition: all 0.3s ease;
+}
+
+.header .Navbarclass .dropdown .dropdown-menu {
+  opacity: 0;
+  display: block;
+  pointer-events: none;
+}
+
+.header .Navbarclass .dropdown:hover .dropdown-menu {
+  opacity: 1;
+  padding: 1em 2em 1em 1em;
+  pointer-events: all;
+  transition: all 0.2s ease-in-out;
+}
+
+.header .Navbarclass .dropdown .dropdown-item {
+  background: transparent;
+  font-size: 0.938em;
+  line-height: 1.5em;
+  margin-bottom: 0px;
+  font-weight: 500;
+  position: relative;
+}
+
+.header .Navbarclass .dropdown .dropdown-item:before {
+  content: "";
+  position: absolute;
+  transition: transform 0.5s ease;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background: #DC7236;
+  transform: scaleX(0);
+}
+
+.header .Navbarclass .dropdown .dropdown-item:hover:before {
+  color: #DC7236;
+}
+
+.header .Navbarclass .dropdown .ourprod_link {
+  pointer-events: none;
+}
+
+.header .Navbarclass .dropdown:hover .down_arrow {
+  transform: rotate(-90deg);
+}
+
+.header .Navbarclass .dropdown .down_arrow {
+  margin-left: 1em;
+  transition: 0.3s;
+}
+
+.header .Navbarclass ul li {
+  margin: 0 5px;
+}
+
+.header .Navbarclass ul li a {
+  font-size: 1.25em;
+  line-height: 1.5em;
+  font-family: "Poppins";
+  color: #FFFFFF;
+  font-weight: bolder;
+  text-decoration: none;
+  padding: 0.5em 0.938em;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.header .Navbarclass ul li a.active,
+.header .Navbarclass ul li a:hover {
+  opacity: 1;
+}
+
+.header .Navbarclass ul li a:focus {
+  outline: none;
+}
+
+.header .Navbarclass .catalogue_btn {
+  background-color: #DC7236;
+  padding: 1em 2em;
+  border-radius: 50px;
+  border: none;
+}
+
+.header .Navbarclass .catalogue_btn .route_link:hover {
+  color: #fff;
+}
+
+.header .Navbarclass .menu-btn i {
+  color: #000000;
+  font-size: 22px;
+  cursor: pointer;
+  display: none;
+}
+
+.header .Navbarclass input[type="checkbox"] {
+  display: none;
+}

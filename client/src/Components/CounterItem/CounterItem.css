@@ -1,0 +1,30 @@
+.common_actual_count {
+  font-size: 3.75em;
+  line-height: 1.183em;
+  letter-spacing: 0.05em;
+  font-weight: bold;
+  margin-bottom: 0.067em;
+  color: rgb(152 122 251);
+  font-family: "Libre Baskerville";
+}
+
+.common_count_title {
+  font-size: 1.125em;
+  line-height: 1.5em;
+  color: #000000;
+  /* Uncomment the line below if you have a variable named $color-primary */
+  /* color: $color-primary; */
+}
+
+@media (max-width: 767px) {
+  .common_actual_count {
+    font-size: 3em;
+    line-height: 1.172em;
+    letter-spacing: 1.45px;
+  }
+
+  .common_count_title {
+    font-size: 1.1em;
+    line-height: 1.182em;
+  }
+}
